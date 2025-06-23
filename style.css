@@ -8,6 +8,33 @@ body {
   letter-spacing: 0.02em;
 }
 
+/* アニメーション */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.9s cubic-bezier(.33,1.02,.52,.99), transform 0.9s cubic-bezier(.33,1.02,.52,.99);
+}
+.reveal.active {
+  opacity: 1;
+  transform: none;
+}
+.hero-overlay {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1.2s cubic-bezier(.33,1.02,.52,.99), transform 1.2s cubic-bezier(.33,1.02,.52,.99);
+}
+.hero-overlay.show {
+  opacity: 1;
+  transform: none;
+}
+  font-family: 'Noto Serif JP', 'Noto Sans JP', 'Yu Mincho', 'Yu Gothic', 'Meiryo', serif;
+  margin: 0;
+  color: #222;
+  background: #f6f7fa;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+}
+
 h1, h2 {
   color: #1a2940;
   margin-bottom: 0.5em;
