@@ -1,55 +1,63 @@
 /* 共通設定 */
 body {
-  font-family: 'Noto Sans JP', 'Yu Gothic', YuGothic, 'Meiryo', sans-serif;
+  font-family: 'Noto Serif JP', 'Noto Sans JP', 'Yu Mincho', 'Yu Gothic', 'Meiryo', serif;
   margin: 0;
   color: #222;
-  background: #f7fafd;
+  background: #f6f7fa;
   line-height: 1.7;
+  letter-spacing: 0.02em;
 }
 
 h1, h2 {
-  color: #155fa0;
+  color: #1a2940;
   margin-bottom: 0.5em;
+  font-family: 'Noto Serif JP', 'Yu Mincho', serif;
 }
 h2 {
-  border-left: 5px solid #155fa0;
-  padding-left: 0.5em;
-  font-size: 1.2em;
+  border-left: 5px solid #1a2940;
+  padding-left: 0.6em;
+  font-size: 1.18em;
+  font-weight: 700;
+  background: linear-gradient(90deg, #e5e8ee 60%, transparent 100%);
 }
 
 section {
   margin: 0 auto 2.5em auto;
-  max-width: 700px;
-  padding: 0 1em;
+  max-width: 740px;
+  padding: 0 1.2em;
 }
 
 /* ヒーローセクション */
 .hero {
-  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=900&q=80') center/cover no-repeat;
+  background: url('https://images.unsplash.com/photo-1517971071642-34a2d3eccb0c?auto=format&fit=crop&w=900&q=80') center/cover no-repeat;
   height: 38vh;
-  min-height: 280px;
+  min-height: 260px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 2px 12px rgba(30,40,70,0.06);
 }
 .hero-overlay {
-  background: rgba(21, 95, 160, 0.75);
+  background: rgba(26, 41, 64, 0.78);
   color: #fff;
-  padding: 2em 1em;
-  border-radius: 8px;
+  padding: 2.1em 1em 1.7em 1em;
+  border-radius: 10px;
   text-align: center;
   width: 100%;
-  max-width: 460px;
+  max-width: 500px;
+  box-shadow: 0 2px 8px rgba(21,95,160,0.10);
 }
 .hero h1 {
-  font-size: 1.6em;
-  margin-bottom: 0.7em;
-  letter-spacing: 0.05em;
+  font-size: 1.35em;
+  margin-bottom: 0.8em;
+  font-family: 'Noto Serif JP', 'Yu Mincho', serif;
+  letter-spacing: 0.03em;
 }
 .subcopy {
-  font-size: 1em;
+  font-size: 1.02em;
   margin-bottom: 0;
+  font-family: 'Noto Sans JP', 'Yu Gothic', sans-serif;
 }
 
 /* 会社概要テーブル */
@@ -57,19 +65,21 @@ section {
   width: 100%;
   border-collapse: collapse;
   background: #fff;
-  border-radius: 6px;
+  border-radius: 7px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(21,95,160,0.07);
+  box-shadow: 0 2px 8px rgba(26,41,64,0.06);
 }
 .company-profile th, .company-profile td {
   padding: 0.7em 0.5em;
   border-bottom: 1px solid #e0e7ef;
+  font-family: 'Noto Sans JP', 'Yu Gothic', sans-serif;
 }
 .company-profile th {
-  background: #e3f0fa;
-  color: #155fa0;
-  width: 7em;
+  background: #e7eaf0;
+  color: #1a2940;
+  width: 8em;
   text-align: left;
+  font-weight: 600;
 }
 .company-profile tr:last-child th, .company-profile tr:last-child td {
   border-bottom: none;
@@ -78,49 +88,54 @@ section {
 /* 業務内容・強み */
 .services ul, .strengths ol {
   background: #fff;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(21,95,160,0.07);
-  padding: 1em 1.3em;
+  border-radius: 7px;
+  box-shadow: 0 2px 8px rgba(26,41,64,0.06);
+  padding: 1.1em 1.4em;
   margin: 0;
 }
 .services li, .strengths li {
   margin-bottom: 0.5em;
   font-size: 1em;
+  font-family: 'Noto Sans JP', 'Yu Gothic', sans-serif;
 }
 .strengths ol {
   list-style: decimal inside;
+  padding-left: 0;
 }
 
 /* お問い合わせ */
 .contact-info {
   margin-bottom: 1em;
   font-size: 1em;
+  color: #1a2940;
 }
 .contact-form {
   background: #fff;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(21,95,160,0.07);
+  border-radius: 7px;
+  box-shadow: 0 2px 8px rgba(26,41,64,0.06);
   padding: 1em 1.3em;
   display: flex;
   flex-direction: column;
   gap: 0.7em;
-  max-width: 400px;
+  max-width: 420px;
 }
 .contact-form label {
   font-weight: 600;
-  color: #155fa0;
+  color: #1a2940;
+  font-family: 'Noto Sans JP', 'Yu Gothic', sans-serif;
 }
 .contact-form input,
 .contact-form textarea {
-  border: 1px solid #b7d4ee;
+  border: 1px solid #bfc7d2;
   border-radius: 4px;
   padding: 0.5em;
   font-size: 1em;
-  background: #f7fafd;
+  background: #f6f7fa;
   resize: vertical;
+  font-family: 'Noto Sans JP', 'Yu Gothic', sans-serif;
 }
 .contact-form button {
-  background: #155fa0;
+  background: #1a2940;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -132,36 +147,49 @@ section {
   transition: background 0.2s;
 }
 .contact-form button:hover {
-  background: #1973c2;
+  background: #31436a;
 }
 
 /* フッター */
 footer {
-  background: #155fa0;
+  background: #1a2940;
   color: #fff;
   text-align: center;
-  padding: 1em 0 1.3em 0;
-  font-size: 0.95em;
-  margin-top: 2em;
+  padding: 1.1em 0 1.5em 0;
+  font-size: 0.97em;
+  margin-top: 2.3em;
+}
+.footer-inner {
+  max-width: 740px;
+  margin: 0 auto;
+}
+.footer-info {
+  margin-bottom: 0.3em;
+  font-size: 1em;
+  color: #d3d6db;
+  font-family: 'Noto Sans JP', 'Yu Gothic', sans-serif;
 }
 
 /* スマホ対応 */
 @media (max-width: 600px) {
   .hero {
-    height: 28vh;
-    min-height: 170px;
+    height: 25vh;
+    min-height: 120px;
   }
   .hero-overlay {
-    padding: 1.2em 0.5em;
+    padding: 1.1em 0.3em;
     max-width: 98vw;
   }
   section {
-    padding: 0 0.5em;
+    padding: 0 0.4em;
   }
   .company-profile table, .services ul, .strengths ol, .contact-form {
-    font-size: 0.98em;
+    font-size: 0.97em;
   }
   .contact-form {
-    padding: 0.7em 0.5em;
+    padding: 0.7em 0.3em;
+  }
+  .footer-inner {
+    padding: 0 0.4em;
   }
 }

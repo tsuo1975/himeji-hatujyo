@@ -3,16 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>株式会社姫路発條製作所 | 精密スプリング加工</title>
+  <title>株式会社姫路発條製作所 | 町工場の誇りと信頼の技術</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts: Noto Serif JP (明朝), Noto Sans JP (ゴシック) -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- ヒーローセクション -->
   <section class="hero">
     <div class="hero-overlay">
-      <h1>技術と信頼で支える、精密スプリング加工</h1>
-      <p class="subcopy">1963年創業。高品質なスプリング・プレス加工品の製造を通じて、産業の発展を支えています。</p>
+      <h1>町工場の誇りを胸に。社会を支える技術を。</h1>
+      <p class="subcopy">株式会社姫路発條製作所は、創業以来60年以上にわたり、大手メーカーの一次下請けとしてスプリング・プレス加工に携わってきました。</p>
     </div>
+  </section>
+
+  <!-- ごあいさつ／企業姿勢 -->
+  <section class="greeting">
+    <h2>ごあいさつ</h2>
+    <p>当社は“町工場”と呼ばれることを誇りに思っています。創業以来、ものづくりの現場を支える黒子として、一貫して高精度・高品質な加工を追求してまいりました。</p>
   </section>
 
   <!-- 会社概要 -->
@@ -20,31 +28,30 @@
     <h2>会社概要</h2>
     <table>
       <tr><th>企業名</th><td>株式会社姫路発條製作所（ヒメジハツジヨウセイサクシヨ）</td></tr>
-      <tr><th>住所</th><td>〒670-0972 兵庫県姫路市岡田97-3</td></tr>
+      <tr><th>所在地</th><td>〒670-0972 兵庫県姫路市岡田97-3</td></tr>
       <tr><th>設立</th><td>1963年</td></tr>
       <tr><th>資本金</th><td>1,000万円</td></tr>
-      <tr><th>従業員数</th><td>15人</td></tr>
+      <tr><th>従業員数</th><td>15名</td></tr>
     </table>
   </section>
 
-  <!-- 業務内容 -->
+  <!-- 事業内容 -->
   <section class="services">
-    <h2>業務内容</h2>
+    <h2>事業内容</h2>
     <ul>
-      <li>スプリング加工</li>
-      <li>プレス加工品の製造</li>
-      <li>試作〜量産まで対応</li>
-      <li>精密部品の小ロット生産対応可能</li>
+      <li>スプリング加工（各種ばね）</li>
+      <li>プレス加工（精密部品）</li>
+      <li>小ロット〜量産対応、試作対応も可能</li>
     </ul>
   </section>
 
-  <!-- 強み・特徴 -->
+  <!-- 当社の強み -->
   <section class="strengths">
-    <h2>強み・特徴</h2>
+    <h2>当社の強み</h2>
     <ol>
-      <li>長年の実績による確かな技術力</li>
-      <li>小ロットから大ロットまで柔軟に対応</li>
-      <li>顧客ニーズに合わせたオーダーメイド対応</li>
+      <li>長年の経験と実績で裏打ちされた信頼</li>
+      <li>柔軟な対応力：多品種小ロット・短納期にも対応</li>
+      <li>品質第一：安定した製品供給で多くの取引先と長年の関係</li>
     </ol>
   </section>
 
@@ -52,12 +59,14 @@
   <section class="contact">
     <h2>お問い合わせ</h2>
     <div class="contact-info">
-      <p>電話番号：<a href="tel:079-298-2337">079-298-2337</a></p>
-      <p>FAX番号：079-294-5062</p>
+      <p>TEL：<a href="tel:079-298-2337">079-298-2337</a></p>
+      <p>FAX：079-294-5062</p>
     </div>
     <form class="contact-form">
-      <label for="name">氏名</label>
+      <label for="name">お名前</label>
       <input type="text" id="name" name="name" required>
+      <label for="company">会社名</label>
+      <input type="text" id="company" name="company">
       <label for="email">メールアドレス</label>
       <input type="email" id="email" name="email" required>
       <label for="message">お問い合わせ内容</label>
@@ -68,7 +77,14 @@
 
   <!-- フッター -->
   <footer>
-    <small>©︎ 株式会社姫路発條製作所 All Rights Reserved.</small>
+    <div class="footer-inner">
+      <div class="footer-info">
+        <span>株式会社姫路発條製作所</span>｜
+        <span>〒670-0972 兵庫県姫路市岡田97-3</span>｜
+        <span>TEL: 079-298-2337</span>
+      </div>
+      <small>© 株式会社姫路発條製作所 All Rights Reserved.</small>
+    </div>
   </footer>
 </body>
 </html>
